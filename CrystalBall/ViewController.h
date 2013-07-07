@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    
+}
+
+@property (weak, nonatomic) IBOutlet UILabel *predictionLabel;
+@property (strong, nonatomic) NSArray *predictionArray;
+@property (strong, nonatomic) UIImageView *imageView;
+- (void) makePrediction;
+- (void) startPrediction;
 
 @end
